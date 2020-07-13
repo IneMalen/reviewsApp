@@ -4,10 +4,14 @@ import { globalStyles } from '../styles/global';
 
 import React from 'react';
 
-export default function Review({ navigation }) {
-    return(
-        <View style= {globalStyles.container}>
-            <Text> Review Screen </Text>
-        </View>
-    )
-}
+export default function ReviewDetails({ route, navigation }) {
+    const { title, body, rating } = route.params;
+  
+    return (
+      <View style={globalStyles.container}>
+        <Text>{title}</Text>
+        <Text>{body}</Text>
+        <Text>{rating}</Text>
+      </View>
+    );
+  }
