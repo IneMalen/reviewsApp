@@ -9,7 +9,7 @@ export const globalStyles = StyleSheet.create ({
     },
     titleText: {
         fontFamily: 'nunito-bold',
-        fontSize: 28,
+        fontSize: 18,
         color: '#333',
     },
     paragraph: {
